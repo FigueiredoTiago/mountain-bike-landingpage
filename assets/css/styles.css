@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap');
+
+@import url('nav-bar.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #D9B596;
+    height: 100vh;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #D9B596;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: #261B11;
+    border-radius: .1rem;
+}
+
+.home-section {
+    min-height: 100vh;
+    background-image: url('../img/stacked-peaks-haikei.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-section .container-img {
+    width: 60%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-image: url('../img/bgsemcor.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.home-section button {
+    color: #D9B596;
+    background-color: #732D14;
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 4rem;
+    font-weight: 900;
+    border-radius: .3rem;
+    border: none;
+
+    transform: skewX(-15deg);
+    transition: 1s;
+
+    position: absolute;
+    bottom: 3.6rem;
+}
+
+.container-img button a {
+    color: #D9B596;
+}
+
+.home-section button a:hover {
+    color: #D9B596;
+}
+
+.home-section button:hover {
+    transform: skewX(-25deg);
+    background-color: #261B11;
+}
+
+.info-bike {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #261B11;
+    color: #D9B596;
+
+    border-radius: 0 5rem 5rem 0;
+
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+}
+
+.details-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-image: url('../bikes/bg.svg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+.container-bike {
+    max-width: 1500px;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+
+    background-image: url('../bikes/bike1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    transition: .2s ease-in-out;
+}
+
+.container-bike.blue {
+    background-image: url('../bikes/bike2.png');
+}
+
+.container-bike.black {
+    background-image: url('../bikes/bike1.png');
+}
+
+
+.card-container {
+    max-width: 40%;
+    width: 40%;
+    height: 50vh;
+
+
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.card-container h1 {
+    color: #D9B596;
+
+    border-radius: 0.5rem;
+    font-size: 6rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 3rem;
+
+}
+
+.card-container li {
+    text-shadow: 1px 1px 1px black;
+    color: #D9B596;
+    display: flex;
+    align-items: center;
+}
+
+.card-container li img {
+    margin-left: .5rem;
+}
+
+.card-container ul {
+    list-style: none;
+}
+
+.card-container span {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.color1 {
+    background-color: #039bbd;
+    margin-left: .5rem;
+}
+
+.color2 {
+    background-color: #151515;
+    margin-left: .5rem;
+}
+
+footer {
+    text-align: center;
+    height: 1vh;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .home-section .container-img {
+        width: 90%;
+    }
+
+    .container-bike {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .info-bike {
+        font-size: 1rem;
+        bottom: 40rem;
+    }
+
+    .details-section {
+        flex-direction: column;
+    }
+
+    .container-bike {
+        margin-top: 15rem;
+        position: relative;
+        bottom: 10rem;
+    }
+
+    .card-container {
+        max-width: 90%;
+        margin-top: 3rem;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 90%;
+        height: 40vh;
+    }
+
+    .card-container h1 {
+        font-size: 4rem;
+    }
+
+    .card-container li {
+        font-size: 1.2rem;
+    }
+
+}
